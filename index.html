@@ -656,7 +656,62 @@
     line-height: 1.6;
   }
 
-  /* ─── WHY ─── */
+    /* ─── PROOF ─── */
+  .proof {
+    background: linear-gradient(135deg, #1a1a3e 0%, #232352 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .proof .section-label { color: #9fc5f8; }
+  .proof .section-title { color: #fff; }
+  .proof .section-sub { color: rgba(255,255,255,0.7); }
+
+  .proof-lead {
+    max-width: 680px;
+    margin-bottom: 2.75rem;
+  }
+
+  .proof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .proof-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem 1.35rem;
+  }
+
+  .proof-card strong {
+    display: block;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .proof-card span {
+    font-size: 0.87rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  .proof-note {
+    border-left: 3px solid var(--blue-light);
+    padding: 0.2rem 0 0.2rem 1.25rem;
+    max-width: 700px;
+  }
+
+  .proof-note p {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.97rem;
+    line-height: 1.75;
+  }
+   /* ─── WHY ─── */
   .why { background: var(--bg-base); }
 
   .why-grid {
