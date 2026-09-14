@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="sk">
- <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2H77EHKRL"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Consent Mode v2 — default DENIED (musí byť PRED gtag.js) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+</script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2H77EHKRL"></script>
+<script>
+  gtag('js', new Date());
   gtag('config', 'G-L2H77EHKRL');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ABECO s.r.o. — AI Automatizácia pre firmy vo východnom Slovensku</title>
 <meta name="description" content="Automatizujeme operatívu firiem v Prešove, Košiciach a Poprade. Faktúry, objednávky, znalostné bázy. Napojenie na Pohoda, Money S3, Abra Flexi.">
 <meta property="og:title" content="ABECO s.r.o. — AI Automatizácia pre firmy">
@@ -1982,6 +1993,46 @@
       }
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
+</script>
+ <!-- Cookie lišta -->
+<div id="cookie-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1A3E;color:#fff;padding:20px;font-family:Inter,sans-serif;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.2)">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+    <p style="margin:0;flex:1 1 320px">
+      Používame analytické cookies (Google Analytics), aby sme vedeli, ako sa web používa.
+      Bez vášho súhlasu ich neukladáme. Viac v <a href="/ochrana-osobnych-udajov.html" style="color:#8FB4E8">Zásadách ochrany osobných údajov</a>.
+    </p>
+    <div style="display:flex;gap:10px;flex-shrink:0">
+      <button id="ck-reject" style="background:transparent;color:#fff;border:1px solid #888780;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:14px">Odmietnuť</button>
+      <button id="ck-accept" style="background:#185FA5;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600">Prijať</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'abeco_consent_v1', bar = document.getElementById('cookie-bar');
+  function set(state){
+    gtag('consent', 'update', {
+      'analytics_storage': state,
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  }
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch(e){}
+  if (saved === 'granted') { set('granted'); }
+  else if (saved === 'denied') { /* zostáva denied */ }
+  else { bar.style.display = 'block'; }
+
+  function decide(state){
+    try { localStorage.setItem(KEY, state); } catch(e){}
+    set(state);
+    bar.style.display = 'none';
+  }
+  document.getElementById('ck-accept').onclick = function(){ decide('granted'); };
+  document.getElementById('ck-reject').onclick = function(){ decide('denied'); };
+})();
 </script>
 </body>
 </html>
