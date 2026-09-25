@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zásady ochrany osobných údajov — ABECO s.r.o.</title>
+<meta name="description" content="Zásady ochrany osobných údajov spoločnosti ABECO s.r.o. — aké údaje spracúvame, na akom právnom základe a aké máte práva.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://abeco.sk/ochrana-osobnych-udajov.html">
+<link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Písma z vlastného webu (predtým Google Fonts — prenos IP adresy bez súhlasu). Licencia OFL-1.1, súbory v /fonts. */
+  @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url(fonts/montserrat-latin-wght-normal.woff2) format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url(fonts/montserrat-latin-ext-wght-normal.woff2) format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url(fonts/inter-latin-wght-normal.woff2) format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url(fonts/inter-latin-ext-wght-normal.woff2) format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+</style>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #185FA5;
+    --purple: #534AB7;
+    --dark: #1a1a3e;
+    --bg-base: #f5f6fd;
+    --bg-card: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #5a5a78;
+    --border: rgba(26, 26, 62, 0.08);
+    --radius: 14px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-base);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .topbar {
+    background: var(--dark);
+    padding: 1.25rem 2rem;
+  }
+
+  .topbar-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .topbar a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .topbar a:hover { color: #fff; }
+
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 4rem;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--dark);
+  }
+
+  .updated {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2.75rem 0 1rem;
+    color: var(--dark);
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.6rem;
+    color: var(--dark);
+  }
+
+  p { margin-bottom: 1rem; }
+
+  ul { margin: 0 0 1rem 1.25rem; }
+  li { margin-bottom: 0.45rem; }
+
+  a { color: var(--blue); }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.92rem;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    background: rgba(24, 95, 165, 0.05);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--dark);
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .table-wrap { overflow-x: auto; }
+
+  footer {
+    background: #0a0a1e;
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.8;
+  }
+
+  .footer-text a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+  }
+
+  .footer-text a:hover { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 640px) {
+    main { padding: 2.5rem 1.25rem 3rem; }
+    .topbar { padding: 1rem 1.25rem; }
+    .card { padding: 1.25rem; }
+    th, td { padding: 0.7rem 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="/">← Späť na abeco.sk</a>
+  </div>
+</div>
+
+<main>
+
+  <h1>Zásady ochrany osobných údajov</h1>
+  <p class="updated">Účinné od 25. septembra 2026</p>
+
+  <p>Tieto zásady vysvetľujú, aké osobné údaje spracúvame prostredníctvom webovej stránky abeco.sk, na akom právnom základe, komu ich sprístupňujeme a aké máte práva.</p>
+
+  <h2>1. Prevádzkovateľ</h2>
+
+  <div class="card">
+    <p><strong>ABECO s.r.o.</strong><br>
+    Okružná 17, 080 01 Prešov, Slovenská republika<br>
+    IČO: 36 464 473</p>
+    <p>E-mail: <a href="mailto:info@abeco.sk">info@abeco.sk</a><br>
+    Telefón: <a href="tel:+421905659106">+421 905 659 106</a></p>
+    <p>Nemáme určenú zodpovednú osobu (DPO) — v otázkach ochrany údajov nás kontaktujte na uvedenom e-maile.</p>
+  </div>
+
+  <h2>2. Aké údaje spracúvame</h2>
+
+  <h3>2.1 Kontaktný formulár</h3>
+  <p>Ak vyplníte kontaktný formulár, spracúvame údaje, ktoré do neho zadáte:</p>
+  <ul>
+    <li><strong>Meno</strong> (povinné)</li>
+    <li><strong>E-mailová adresa</strong> (povinné)</li>
+    <li><strong>Názov firmy</strong> (nepovinné)</li>
+    <li><strong>Text správy</strong> (nepovinné) — vrátane akýchkoľvek údajov, ktoré do nej sami uvediete</li>
+  </ul>
+  <p><strong>Účel:</strong> odpovedať na vašu správu a prípadne pripraviť ponuku.<br>
+  <strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR — opatrenia pred uzavretím zmluvy na vašu žiadosť.<br>
+  <strong>Doba uchovávania:</strong> 3 roky od poslednej komunikácie, potom údaje vymažeme. Ak z dopytu vznikne obchodný vzťah, riadi sa doba uchovávania príslušnými účtovnými a daňovými predpismi.</p>
+
+  <h3>2.2 AI chatbot</h3>
+  <p>Na stránke je dostupný AI asistent. Spracúvame <strong>obsah konverzácie</strong>, ktorú s ním vediete, vrátane údajov, ktoré do chatu sami zadáte.</p>
+  <p><strong>Účel:</strong> poskytnúť odpoveď na váš dopyt a zlepšovať kvalitu asistenta.<br>
+  <strong>Právny základ:</strong> čl. 6 ods. 1 písm. f) GDPR — oprávnený záujem na obsluhe návštevníkov webu.<br>
+  <strong>Doba uchovávania:</strong> 12 mesiacov.</p>
+  <p>Do chatu prosím nezadávajte citlivé osobné údaje (zdravotné údaje, rodné čísla, čísla platobných kariet a podobne).</p>
+
+  <h3>2.3 Analytika návštevnosti</h3>
+  <p>Ak k tomu udelíte súhlas prostredníctvom lišty o cookies, používame <strong>Google Analytics 4</strong>. Spracúvajú sa:</p>
+  <ul>
+    <li>skrátená IP adresa</li>
+    <li>informácie o zariadení a prehliadači</li>
+    <li>navštívené stránky, čas na stránke, zdroj návštevy</li>
+    <li>identifikátor uložený v cookies (<code>_ga</code>, <code>_ga_L2H77EHKRL</code>) s platnosťou 2 roky</li>
+  </ul>
+  <p><strong>Účel:</strong> pochopiť, ako sa web používa, a zlepšovať jeho obsah.<br>
+  <strong>Právny základ:</strong> čl. 6 ods. 1 písm. a) GDPR — váš súhlas. Súhlas môžete kedykoľvek odvolať (viď bod 5).<br>
+  <strong>Doba uchovávania:</strong> 14 mesiacov v službe Google Analytics.</p>
+  <p>Bez vášho súhlasu sa analytické cookies neukladajú. Používame režim Google Consent Mode v2, ktorý zbiera bez súhlasu len anonymné agregované signály bez identifikátorov.</p>
+
+  <h3>2.4 Webové písma</h3>
+  <p>Písma (Montserrat a Inter) načítavame priamo z nášho webu, nie zo služby Google Fonts. Pri ich zobrazení sa vaša IP adresa spoločnosti Google neprenáša.</p>
+
+  <h3>2.5 Technické záznamy hostingu</h3>
+  <p>Stránku prevádzkujeme na GitHub Pages. Poskytovateľ hostingu môže spracúvať bežné serverové logy (IP adresa, čas prístupu, typ prehliadača) na zaistenie bezpečnosti a dostupnosti služby.</p>
+  <p><strong>Právny základ:</strong> čl. 6 ods. 1 písm. f) GDPR — oprávnený záujem na bezpečnej prevádzke webu.</p>
+
+  <h2>3. Komu údaje sprístupňujeme</h2>
+
+  <p>Vaše údaje nepredávame. Sprístupňujeme ich len nasledujúcim sprostredkovateľom a poskytovateľom služieb:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Príjemca</th>
+          <th>Účel</th>
+          <th>Umiestnenie</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Make.com (Celonis SE)</td>
+          <td>Spracovanie odoslaného kontaktného formulára</td>
+          <td>EÚ (Írsko)</td>
+        </tr>
+        <tr>
+          <td>Google Ireland Ltd. / Google LLC</td>
+          <td>Doručenie e-mailu, tabuľkové spracovanie dopytov, Google Analytics</td>
+          <td>EÚ / USA</td>
+        </tr>
+        <tr>
+          <td>Voiceflow Inc.</td>
+          <td>Prevádzka AI chatbota</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>GitHub Inc. (Microsoft)</td>
+          <td>Hosting webovej stránky</td>
+          <td>USA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Pri prenose údajov do USA sa opierame o rozhodnutie Európskej komisie o primeranosti ochrany (EU–US Data Privacy Framework), prípadne o štandardné zmluvné doložky podľa čl. 46 GDPR.</p>
+
+  <h2>4. Cookies</h2>
+
+  <p>Na stránke používame tieto kategórie úložiska:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Názov</th>
+          <th>Účel</th>
+          <th>Platnosť</th>
+          <th>Súhlas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>abeco_consent_v1</code></td>
+          <td>Zapamätanie vášho rozhodnutia o cookies (localStorage)</td>
+          <td>Do vymazania</td>
+          <td>Nevyžaduje sa</td>
+        </tr>
+        <tr>
+          <td><code>_ga</code></td>
+          <td>Rozlíšenie návštevníkov — Google Analytics</td>
+          <td>2 roky</td>
+          <td>Áno</td>
+        </tr>
+        <tr>
+          <td><code>_ga_L2H77EHKRL</code></td>
+          <td>Udržanie stavu relácie — Google Analytics</td>
+          <td>2 roky</td>
+          <td>Áno</td>
+        </tr>
+        <tr>
+          <td>Voiceflow</td>
+          <td>Udržanie kontextu konverzácie s chatbotom</td>
+          <td>Relácia</td>
+          <td>Nevyžaduje sa (nevyhnutné pre funkciu)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>5. Odvolanie súhlasu</h2>
+
+  <p>Súhlas s analytickými cookies môžete kedykoľvek odvolať bez uvedenia dôvodu. Stačí vymazať údaje webovej stránky vo svojom prehliadači (nastavenia → súkromie → vymazať údaje prehliadania pre abeco.sk) — pri ďalšej návšteve sa lišta zobrazí znova a môžete zvoliť inú možnosť.</p>
+  <p>Prípadne nám napíšte na <a href="mailto:info@abeco.sk">info@abeco.sk</a> a odvolanie zaznamenáme.</p>
+  <p>Odvolanie súhlasu nemá vplyv na zákonnosť spracúvania pred jeho odvolaním.</p>
+
+  <h2>6. Vaše práva</h2>
+
+  <p>Podľa GDPR a zákona č. 18/2018 Z. z. o ochrane osobných údajov máte právo:</p>
+  <ul>
+    <li><strong>na prístup</strong> — vedieť, aké údaje o vás spracúvame, a získať ich kópiu</li>
+    <li><strong>na opravu</strong> — požiadať o opravu nesprávnych alebo doplnenie neúplných údajov</li>
+    <li><strong>na vymazanie</strong> („právo na zabudnutie")</li>
+    <li><strong>na obmedzenie spracúvania</strong></li>
+    <li><strong>na prenosnosť</strong> — získať údaje v štruktúrovanom, strojovo čitateľnom formáte</li>
+    <li><strong>namietať</strong> proti spracúvaniu na základe oprávneného záujmu</li>
+    <li><strong>odvolať súhlas</strong> tam, kde je spracúvanie založené na súhlase</li>
+  </ul>
+
+  <p>Svoje práva si môžete uplatniť e-mailom na <a href="mailto:info@abeco.sk">info@abeco.sk</a>. Odpovieme najneskôr do 30 dní od doručenia žiadosti.</p>
+
+  <h2>7. Sťažnosť dozornému orgánu</h2>
+
+  <div class="card">
+    <p>Ak sa domnievate, že spracúvaním vašich údajov porušujeme právne predpisy, máte právo podať návrh na začatie konania:</p>
+    <p><strong>Úrad na ochranu osobných údajov Slovenskej republiky</strong><br>
+    Hraničná 12, 820 07 Bratislava 27<br>
+    E-mail: <a href="mailto:statny.dozor@pdp.gov.sk">statny.dozor@pdp.gov.sk</a><br>
+    Web: <a href="https://dataprotection.gov.sk" target="_blank" rel="noopener">dataprotection.gov.sk</a></p>
+  </div>
+
+  <h2>8. Automatizované rozhodovanie</h2>
+
+  <p>Nevykonávame automatizované rozhodovanie ani profilovanie s právnym účinkom na vašu osobu. AI chatbot poskytuje informácie a odpovede, nerobí však rozhodnutia, ktoré by sa vás právne dotýkali.</p>
+
+  <h2>9. Zmeny týchto zásad</h2>
+
+  <p>Zásady môžeme priebežne aktualizovať, napríklad pri zmene použitých nástrojov alebo právnych predpisov. Aktuálne znenie je vždy dostupné na tejto adrese. Dátum účinnosti nájdete v hornej časti stránky.</p>
+
+</main>
+
+<footer>
+  <div class="footer-text">
+    © 2026 ABECO s.r.o. · IČO: 36 464 473 · Okružná 17, 080 01 Prešov<br>
+    <a href="mailto:info@abeco.sk">info@abeco.sk</a> ·
+    <a href="tel:+421905659106">+421 905 659 106</a> ·
+    <a href="https://linkedin.com/in/igor-szeghy" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
